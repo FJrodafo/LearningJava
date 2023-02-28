@@ -19,7 +19,7 @@ public class Signup extends javax.swing.JFrame {
 
     public void AddUser() {
         String pass = String.valueOf(textPassword.getPassword());
-        String SQL = "Insert into Users (user, pass) values (?, ?)";
+        String SQL = "Insert into SignupSignin (user, pass) values (?, ?)";
         try {
             PreparedStatement pst = con.prepareStatement(SQL);
             pst.setString(1, textUsername.getText());

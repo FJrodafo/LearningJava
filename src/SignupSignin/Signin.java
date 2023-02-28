@@ -19,7 +19,7 @@ public class Signin extends javax.swing.JFrame {
         int result = 0;
         String pass = String.valueOf(textPassword.getPassword());
         String username = textUsername.getText();
-        String SQL = "Select * from Users where user = '" + username + "' and pass = '" + pass + "'";
+        String SQL = "Select * from SignupSignin where user = '" + username + "' and pass = '" + pass + "'";
         try {
             Statement st = con.createStatement();
             ResultSet rs = st.executeQuery(SQL);
